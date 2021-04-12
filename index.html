@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <img id="logo" src="./images/logo.svg" alt="Logo">
+      <h3>We are launching <span>soon!</span></h3>
+      <p>  Subscribe and get notified</p>
+      <form id="form" action="#" class="form-control">
+        <input type="email" name="emailaddress" id="email" class="email-address" placeholder="Your email Address">
+        <button onclick="check()" id="submit">Notify Me</button>
+      </form>
+      <small id="text-error">Please provide a valid mail</small>
+      <img class="dashboard-img" src="./images/illustration-dashboard.png" alt="">
+      <div class="social-icon">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></i></a>        
+        <a href="#"><i class="fab fa-instagram"></i></i></a>                
+      </div>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </div>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">KIRUBA</a>.
+    </p>
+  </footer>
+  <script src="./style.js"></script>
+</body>
+</html>

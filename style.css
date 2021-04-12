@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    min-height: 100vh
+}
+main{
+    padding: 6rem 2rem 3rem;
+    text-align: center;
+}
+#logo{
+    width: 3em;
+    margin-bottom: 2em;
+}
+.container > h3{
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: hsl(0, 0%, 59%);
+}
+.container > h3 > span{
+    font-weight: 700;
+    color: #000;
+}
+.container > p {
+    font-size: .5em;
+    margin-bottom: 2em;
+}
+.form-control{
+    padding: 0 1rem;
+}
+.form-control > input{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 1em;
+    border-radius: 2em;
+    border: 1px solid hsl(223, 100%, 88%);
+    outline: none;
+    padding-left: 20px;
+    margin-bottom: .8em;
+}
+input::placeholder{
+    color: hsl(223, 100%, 80%);
+}
+
+#text-error{
+    display: block;
+    color: red;
+    font-style: italic;
+    font-size: .5em;
+    text-align: left;
+    margin-left: 2em;
+    margin-bottom: 3rem;
+    visibility: hidden;
+}
+.form-control button{
+    background-color: hsl(223, 87%, 63%);
+    width: 100%;
+    max-width: 100%;
+    padding: 1em;
+    border-radius: 2em;
+    border: 1px solid hsl(223, 100%, 88%);
+    outline: none;
+    padding-left: 20px;
+    margin-bottom: .8em;
+    color: #fff;
+    box-shadow:  0px 5px .5em .1em hsl(223, 100%, 88%);
+    cursor: pointer;
+}
+.dashboard-img{
+    width: 100%;
+    margin-bottom: 4em;
+}
+.social-icon > a{
+    font-size: 1rem;
+    color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(0, 0%, 90%);
+    padding: .5rem;
+    border-radius: 50%;
+}
+.social-icon > a:first-child{
+    padding: .5rem .7em;
+}
+.social-icon{
+    display: flex;
+    gap: .7em;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+.show{
+    visibility: visible !important;
+}
+@media screen and (min-width:48rem) {
+    .form-control{
+        display: flex;
+        gap: 1rem;
+    }
+    .form-control > input{
+        flex: 70%;
+    }
+    .form-control button{
+        flex: 30%;
+    }
+}
+@media screen and (min-width:77.5rem)
+{
+    main{
+        width: 100%;
+        max-width: 40%;
+        margin: 0 auto;
+        padding: 3em 0 1em;
+    }
+    #logo{
+        width: 4rem;
+        margin-bottom: 2rem;
+    }
+    .container > h3{
+        font-size: 2em;
+    }
+    .container > p{
+        font-size: 1rem;
+    }
+
+}
